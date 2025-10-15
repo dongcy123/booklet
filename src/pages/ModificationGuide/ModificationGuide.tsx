@@ -3,6 +3,13 @@ import { Card, Input, Collapse, Tag, Button, Space, Dialog, Form, Select, Textar
 import { SearchIcon, CopyIcon, CodeIcon, AddIcon, EditIcon, DeleteIcon, ImageIcon, CloseIcon, PlayCircleFilledIcon } from 'tdesign-icons-react';
 import { ModificationGuide as ModificationGuideType } from '../../types';
 
+// 导入视频文件
+import video1 from '../../assets/mp4/关于我们-图像替换.mp4';
+import video2 from '../../assets/mp4/轮播图-图片替换.mp4';
+import video3 from '../../assets/mp4/三大业务-文本修改.mp4';
+import video4 from '../../assets/mp4/标题小字-文本修改.mp4';
+import video5 from '../../assets/mp4/打开项目.mp4';
+
 const mockGuides: ModificationGuideType[] = [
   {
     id: 'replace-image',
@@ -12,8 +19,8 @@ const mockGuides: ModificationGuideType[] = [
     code: '在首页横幅区域，将"old_image_description.jpg"这张图片替换为位于[图片URL或路径]的新图片。',
     tags: ['图片', '替换', '基础'],
     videos: [
-      '/src/assets/mp4/关于我们-图像替换.mp4',
-      '/src/assets/mp4/轮播图-图片替换.mp4'
+      video1,
+      video2
     ]
   },
   {
@@ -48,8 +55,8 @@ const mockGuides: ModificationGuideType[] = [
     code: '将"三大业务"模块中的标题文字从"Our Services"修改为"我们的核心业务"，将描述文字从"We provide comprehensive solutions"修改为"提供全方位的专业解决方案"。',
     tags: ['文字', '修改', '模块', '标题'],
     videos: [
-      '/src/assets/mp4/三大业务-文本修改.mp4',
-      '/src/assets/mp4/标题小字-文本修改.mp4'
+      video3,
+      video4
     ]
   },
   {
@@ -119,7 +126,7 @@ const mockGuides: ModificationGuideType[] = [
     code: '使用代码编辑器打开项目文件夹，然后运行开发服务器进行预览。',
     tags: ['项目', '预览', '基础'],
     videos: [
-      '/src/assets/mp4/打开项目.mp4'
+      video5
     ]
   },
   {
